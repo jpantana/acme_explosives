@@ -1,7 +1,5 @@
 import typesData from '../../helpers/data/typesData';
 
-// let types = [];
-
 const writeTypes = (types) => {
   console.error(types);
 };

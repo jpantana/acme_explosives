@@ -1,19 +1,24 @@
 import axios from 'axios';
 
-// const loadCategories = () => axios.get('../../../../db/categories.json');
+const getProductsForEachType = categoriesWithTypes => new Promise((resolve, reject) => {
+  axios.get('../db/products.json')
+    .then((resp) => {
+      const totalArrayToPrint = [];
+      const { products } = resp.data;
+      categoriesWithTypes.forEach((category) => {
+        const newCategory = category;
+        totalArrayToPrint.push(newCategory);
+        newCategory.types = category.types.map((t) => {
+          const newType = t;
+          newType.categoryname = category.name;
+          const matchingProducts = products.filter(product => product.type === newType.id);
+          newType.products = matchingProducts;
+          return newType;
+        });
+      });
+      resolve(totalArrayToPrint);
+    })
+    .catch(err => reject(err));
+});
 
-
-const loadProducts = () => axios.get('../../../../db/products.json');
-// const loadProducts = products => new Promise((resolve, reject) => {
-//   axios.get('../../../../db/products.json')
-//     .then((resp) => {
-//       const { products } = resp.data;
-//       const productsWithCategories = products.map((product) => {
-//         const newProduct = product;
-//         const matchingCategory = categories.filter(category => category.id === product.id);
-//       });
-//     })
-//     .catch((err) => console.error(err));
-// });
-
-export default { loadProducts };
+export default { getProductsForEachType };
