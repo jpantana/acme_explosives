@@ -2,37 +2,32 @@ import categoriesData from '../../helpers/data/categoriesData';
 import util from '../../helpers/util';
 import typesData from '../../helpers/data/typesData';
 import productsData from '../../helpers/data/productsData';
+import './categories.scss';
 
 const writeCategories = (categories) => {
-  console.error(categories.length);
+// Each card should say the name, description, product name,
+// type name, and category name for that product.
   let domString = '';
   for (let i = 0; i < categories.length; i += 1) {
-    domString += '<div class="card">';
-    domString += `    <h1>${categories[i].name}</h1>`;
-    // console.error('first one', categories[i].types.length);
     for (let j = 0; j < categories[i].types.length; j += 1) {
-      console.error(categories[i].types[j].name);
-      domString += `    <h5>${categories[i].types[j].name}</h5>`;
-      for (let k = 0; k < categories[i].types[j].products.length; k += 1) {
-        console.error(categories[i].types[j].products);
-        domString += `    <h5>${categories[i].types[j].name}</h5>`;
+      for (let n = 0; n < categories[i].types[j].products.length; n += 1) {
+        domString += '  <div class="padCard col-3 m-auto">';
+        domString += '    <div class="card cardTarget p-2 m-auto justify-content-center">';
+        domString += '    <div class="cardTitle">';
+        domString += `      <h2>${categories[i].types[j].products[n].name}</h2>`; // PRODUCT NAME
+        domString += '    </div>';
+        domString += `      <p>${categories[i].types[j].products[n].description}</p>`; // PRODUCT Description
+        domString += `      <h3>For ${categories[i].types[j].name} use</h3>`; // TYPE NAME
+        domString += `      <p>${categories[i].types[j].description}</p>`; // TYPE DESCRIP
+        domString += `      <h5><span class="span">This product is: </span>${categories[i].name}</h5>`; // CATEGORY NAME
+        domString += '    </div>';
+        domString += '  </div>';
       }
+      domString += '  </div>';
     }
+    domString += '  </div>';
   }
   domString += '</div>';
-
-
-  // categories.forEach((category) => {
-  //   domString += '<div class="card">';
-  //   domString += `    <h1>${category.name}</h1>`;
-  //   category.types.forEach((type) => {
-  //     domString += `    <h5>${type.name}</h5>`;
-  //     domString += `    <h6>${type.description}</h6>`;
-  //     category.types.products.forEach((product) => {
-  //       domString += `    <h5>${product.name}</h5>`;
-  //     });
-  //   });
-  // });
   util.printToDom('productsDiv', domString);
 };
 
@@ -42,7 +37,6 @@ const initCategories = () => {
     .then((x) => {
       productsData.getProductsForEachType(x)
         .then((totalArrayToPrint) => {
-          console.error(totalArrayToPrint[0].types[0].products);
           writeCategories(totalArrayToPrint);
         });
     })

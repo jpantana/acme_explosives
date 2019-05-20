@@ -1,15 +1,15 @@
-import typesData from '../../helpers/data/typesData';
+// import typesData from '../../helpers/data/typesData';
 
-const writeTypes = (types) => {
-  console.error(types);
-};
+// // const writeTypes = (types) => {
+// //   console.error(types);
+// // };
 
-const initTypes = (categoryId) => {
-  typesData.loadTypesForCard(categoryId)
-    .then((types) => {
-      writeTypes(types);
-    })
-    .catch(err => console.error(err));
-};
+// const initTypes = (categoryId) => {
+//   typesData.loadTypesForCard(categoryId)
+//     .then((types) => {
+//       writeTypes(types);
+//     })
+//     .catch(err => console.error(err));
+// };
 
-export default { initTypes, writeTypes };
+// export default { initTypes };

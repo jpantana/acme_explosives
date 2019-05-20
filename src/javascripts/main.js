@@ -1,11 +1,11 @@
 import '../styles/main.scss';
-// import types from './components/types/types';
 import categories from './components/categories/categories';
+import dropDown from './helpers/dropDown';
 
 
 const init = () => {
   categories.initCategories();
-  // types.initTypes();
+  dropDown.dropDownBuilder();
 };
 
 init();

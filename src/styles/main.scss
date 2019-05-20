@@ -1,5 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
+@import './colors.scss';
 
 body {
-  background-color: lightblue;
+  background-color: $lightBlue;
 }
+
+// #dropDownPlacement {
+//   position: relative;
+//   z-index: 100000000;
+// }
