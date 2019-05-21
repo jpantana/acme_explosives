@@ -7,7 +7,7 @@ import demolition from '../demolition/demolition';
 import $ from '../../../../node_modules/jquery';
 import './categories.scss';
 
-const writeCategories = (categories) => {
+const writeCatTypeProductCards = (categories) => {
   let domString = '';
   for (let i = 0; i < categories.length; i += 1) {
     for (let j = 0; j < categories[i].types.length; j += 1) {
@@ -32,24 +32,33 @@ const writeCategories = (categories) => {
   util.printToDom('productsDiv', domString);
 };
 
+const toggleEventListeners = (totalArrayToPrint) => {
+  writeCatTypeProductCards(totalArrayToPrint);
+  $('#fireworksOnly').click((e) => {
+    e.preventDefault();
+    fireworks.fireworksEvent(totalArrayToPrint);
+  });
+  $('#demoOnly').click((e) => {
+    e.preventDefault();
+    demolition.demoEvent(totalArrayToPrint);
+  });
+  $('#showAll').click((e) => {
+    e.preventDefault();
+    writeCatTypeProductCards(totalArrayToPrint);
+  });
+};
+
 const initCategories = () => {
   categoriesData.loadCategories()
     .then(resp => typesData.getTypesForEachCat(resp.data.categories))
     .then((x) => {
       productsData.getProductsForEachType(x)
         .then((totalArrayToPrint) => {
-          writeCategories(totalArrayToPrint);
-          $('#fireworksOnly').click((e) => {
-            e.preventDefault();
-            fireworks.fireworksEvent(totalArrayToPrint);
-          });
-          $('#demoOnly').click((e) => {
-            e.preventDefault();
-            demolition.demoEvent(totalArrayToPrint);
-          });
+          writeCatTypeProductCards(totalArrayToPrint);
+          toggleEventListeners(totalArrayToPrint);
         });
     })
     .catch(err => console.error('error from initCategories requests', err));
 };
 
-export default { initCategories, writeCategories };
+export default { initCategories, writeCatTypeProductCards };
