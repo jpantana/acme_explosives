@@ -1,112 +1,115 @@
 {
-  "products": [{
-      "fairy_sparklers": {
-          "id": "product0",
-          "type": "type0",
-          "name": "Fairy Sparklers",
-          "description": "Multi-colored sparklers that are safe for any age."
-      },
-      "roman_candles": {
-          "id": "product0",
-          "type": "type1",
-          "name": "Roman Candles",
-          "description": "Your everyday Roman Candle, ready to set any unsuspecting forest on fire"
-      },
-      "yellow_jackets": {
-          "id": "product0",
-          "type": "type2",
-          "name": "Roman Candles",
-          "description": "Your everyday Roman Candle, ready to set any unsuspecting forest on fire"
-      },
-      "whatever4": {
-        "id": "product1",
-        "type": "type0",
-        "name": "Bottle Rockets",
-        "description": " belief, Lorem Ipsum is not simply random text. It has roots in a piece of"
-    },
-    "whatever5": {
-        "id": "product1",
-        "type": "type1",
-        "name": "Fizzing Whisbies",
-        "description": "simply dummy text of the printing and typesetting industry."
-    },
-    "whatever6": {
-        "id": "product1",
-        "type": "type2",
-        "name": "Tuna Suprise",
-        "description": "Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, l"
-    },
-    "whatever7": {
-      "id": "product2",
+  "products": 
+  [
+    {
+    "Fairy Sparklers": {
+      "id": "product1",
       "type": "type0",
-      "name": "Arney's Explosion",
-      "description": "de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by"
-  },
-  "whatever8": {
+      "name": "Fairy Sparklers",
+      "description": "Multi-colored sparklers that are safe for any age. Even pet friendly!"
+    },
+    "Roman Candles": {
       "id": "product2",
       "type": "type1",
-      "name": "Fire Parade",
-      "description": "pecting forest on fire"
-  },
-  "whatever9": {
-      "id": "product2",
+      "name": "Roman Candles",
+      "description": "Your everyday Roman Candle, ready to set any unsuspecting forest on fire. Use it to torment little sisters too!"
+    },
+    "Sky Rockets": {
+      "id": "product3",
       "type": "type2",
-      "name": "Low Man Suprise",
-      "description": "randomised words which don't look"
-  },
-  "whatever10": {
-    "id": "product3",
-    "type": "type0",
-    "name": "Funky Foam",
-    "description": "there isn't anything embarrassing hidden in the middle of text. All"
-},
-"whatever11": {
-    "id": "product3",
-    "type": "type1",
-    "name": "Touchy Tuna",
-    "description": "enerator on the Internet. It uses a dictionary of over 200 Latin words,"
-},
-"whatever12": {
-    "id": "product3",
-    "type": "type2",
-    "name": "whirlwind",
-    "description": "ou are going to use a passage"
-},
-"whatever13": {
-  "id": "product4",
-  "type": "type0",
-  "name": "Something else",
-  "description": ""
-},
-"whatever14": {
-  "id": "product4",
-  "type": "type1",
-  "name": "Shit Fire",
-  "description": " sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum gener"
-},
-"whatever15": {
-  "id": "product4",
-  "type": "type2",
-  "name": "This and That",
-  "description": "t. It uses a dictionary of over 200 Latin w"
-},
-"whatever16": {
-  "id": "product5",
-  "type": "type0",
-  "name": "Rocket Man",
-  "description": "standard chunk of Lorem Ipsum used since the 1500s is reproduced below "
-},
-"whatever17": {
-  "id": "product5",
-  "type": "type1",
-  "name": "Davie Bowie's Last Flight",
-  "description": "rough the cites of the word"
-},
-"whatever18": {
-  "id": "product5",
-  "type": "type2",
-  "name": "Someone's gonna die",
-  "description": "s in a piece of classical Latin"
-}
-  }]
+      "name": "Sky Rockets",
+      "description": "Make the mirth of Gandalf your own with these party favorites"
+    },
+    "Bottle Rockets": {
+      "id": "product4",
+      "type": "type3",
+      "name": "Bottle Rockets",
+      "description": "Great for neighborhood light shows. Bad when launching hundreds at a time and the bottle tips your way."
+    },
+    "Fizzing Whisbies": {
+      "id": "product5",
+      "type": "type4",
+      "name": "Fizzing Whisbies",
+      "description": "Delores Umbridge is a piece of crap and deserves everything she got."
+    },
+    "Tuna Surprise": {
+      "id": "product6",
+      "type": "type5",
+      "name": "Tuna Surprise",
+      "description": "The first of its kind: The exploding fireball emits a strong whiff of tuna surprise"
+    },
+    "Arney's Explosion": {
+      "id": "product7",
+      "type": "type0",
+      "name": "Arney's Explosion",
+      "description": "Pure C4 sourced from the deepest, darkest corners of the black market"
+    },
+    "Fire Parade": {
+      "id": "product8",
+      "type": "type1",
+      "name": "Fire Parade",
+      "description": "Literally a flame thrower that launches on the back of a rocket"
+    },
+    "TNT": {
+      "id": "product9",
+      "type": "type2",
+      "name": "TNT",
+      "description": "Wiley Coyote has had a turn or two with this fire thrower"
+    },
+    "Funky Foam": {
+      "id": "product10",
+      "type": "type3",
+      "name": "Funky Foam",
+      "description": "kept in toothpaste bottles, this highly corrosive and flammable substance will take the door off any vault"
+    },
+    "Touchy Tuna": {
+      "id": "product11",
+      "type": "type4",
+      "name": "Touchy Tuna",
+      "description": "A taxidermy tuna loaded with gunpowder and a fuse. Comes with matches."
+    },
+    "whirlwind": {
+      "id": "product12",
+      "type": "type5",
+      "name": "whirlwind",
+      "description": "You've heard of fire tornados? Well hold on to your butts"
+    },
+    "Something else": {
+      "id": "product13",
+      "type": "type0",
+      "name": "Something else",
+      "description": "this thing explodes, but not much else is known about it"
+    },
+    "Shit Fire": {
+      "id": "product14",
+      "type": "type1",
+      "name": "Shit Fire",
+      "description": "With only two ingredients, you'll be shocked at the punch this bomb packs"
+    },
+    "Dragon's Egg": {
+      "id": "product15",
+      "type": "type2",
+      "name": "Dragon's Egg",
+      "description": "The lore that arose out of the Medieval times has proved true."
+    },
+    "Rocket Man": {
+      "id": "product16",
+      "type": "type3",
+      "name": "Rocket Man",
+      "description": "This Elton John classic can be heard for miles upon detonation"
+    },
+    "David Bowie's Last Flight": {
+      "id": "product17",
+      "type": "type4",
+      "name": "David Bowie's Last Flight",
+      "description": "This only explodes in the vacuum of space, so terrestrial residents need not fear"
+    },
+    "Watusi": {
+      "id": "product18",
+      "type": "type5",
+      "name": "Watusi",
+      "description": "It explodes, but only on a very very small scale, so small the naked eye can't see it."
+    }
+  }
+]
 }
