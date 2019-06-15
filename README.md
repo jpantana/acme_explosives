@@ -4,7 +4,7 @@
 A website to that shows fireworks and demolition products, and can view them either together, or seperately.
 
 ## Screenshots
-![Image of the Shotz website.](https://raw.githubusercontent.com/jpantana/acme_explosives/dom/screenshots/download.png "screenshot of Acme Explosives site.")
+![Image of the Acme website.](https://raw.githubusercontent.com/jpantana/acme_explosives/master/screenshots/firedemo.png "screenshot of Acme Explosives site.")
 
 ## Installation Instructions
 * Clone down this repo
